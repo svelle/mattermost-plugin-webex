@@ -174,7 +174,7 @@ func (mc MockClient) GetPersonalMeetingRoomUrl(roomId, username, email string) (
 	if room == "" {
 		room = getUserFromEmail(email)
 	}
-	return "https://" + mc.SiteHost + "/meet/" + room, nil
+	return "https://" + mc.SiteHost + "/join/" + room, nil
 }
 
 // only for testing
